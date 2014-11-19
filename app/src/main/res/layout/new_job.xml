@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/job_frag" >
+
+    <LinearLayout
+        android:id="@+id/layout_project_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:id="@+id/TV_project_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/project_name"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etxt_project_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/project_name"
+            android:layout_weight="4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_job_num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@+id/layout_project_name" >
+
+
+        <TextView
+            android:id="@+id/TV_job_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/job_num"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etxt_job_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/job_num"
+            android:layout_weight="4"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_logged_by"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@+id/layout_job_num" >
+
+        <TextView
+            android:id="@+id/TV_logged_by"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/logged_by"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etxt_logged_by"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/logged_by"
+            android:layout_weight="4"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@+id/layout_logged_by" >
+
+        <TextView
+            android:id="@+id/TV_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/rl"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etxt_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/rl"
+            android:layout_weight="4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_equipment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@+id/layout_rl" >
+
+        <TextView
+            android:id="@+id/TV_equipment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/equipment"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etxt_equipment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/equipment"
+            android:layout_weight="4"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_equipment"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset" />
+    </LinearLayout>
+
+</RelativeLayout>

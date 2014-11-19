@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/job_frag" >
+
+
+    <LinearLayout
+        android:id="@+id/layout_operator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@+id/layout_equipment" >
+
+        <TextView
+            android:id="@+id/TV_operator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/operator"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etxt_operator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/operator"
+            android:layout_weight="4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_company"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@+id/layout_operator" >
+
+        <TextView
+            android:id="@+id/TV_company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/company"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etxt_company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/company"
+            android:layout_weight="4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@+id/layout_company" >
+
+        <TextView
+            android:id="@+id/TV_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/location"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etxt_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/location"
+            android:layout_weight="4"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_excavdatum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@+id/layout_location" >
+
+        <TextView
+            android:id="@+id/TV_excavdatum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/excavdatum"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etxt_excavdatum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/excavdatum"
+            android:layout_weight="4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_excav_start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@+id/layout_excavdatum" >
+
+        <TextView
+            android:id="@+id/TV_excav_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/excav_start"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etxt_excav_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/excav_start"
+            android:layout_weight="4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_excav_finished"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@+id/layout_excav_start" >
+
+        <TextView
+            android:id="@+id/TV_excav_finished"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/excav_finished"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etxt_excav_finished"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/excav_finished"
+            android:layout_weight="4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_excav_finished"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset" />
+    </LinearLayout>
+
+
+</RelativeLayout>

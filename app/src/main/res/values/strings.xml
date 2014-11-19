@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MDM Software</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="new_job">New Job Intent and string</string>
+    <string name="list_job">List Job Intent and String</string>
+
+
+    <string name="add_emp">Add Employee</string>
+    <string name="update_emp">Update Employee</string>
+    <string name="name">Employee Name</string>
+    <string name="dob">Employee DOB</string>
+    <string name="salary">Employee Salary</string>
+    <string name="update">Update</string>
+    <string name="add">Create Job</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="project_name">Project Name</string>
+    <string name="job_num">Job Number</string>
+    <string name="logged_by">Logged By</string>
+    <string name="excavdatum">Excavdatum</string>
+    <string name="rl">Rl</string>
+    <string name="equipment">Equipment</string>
+    <string name="operator">Operator</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+    <string name="excav_start">Excavation Start Date</string>
+    <string name="excav_finished">Excavation Finish Date</string>
+
+    <string name="add_job_title">Create New Job</string>
+    <string name="list_job_title">Jobs List</string>
+
+</resources>

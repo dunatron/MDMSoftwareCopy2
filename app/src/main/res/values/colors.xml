@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="list_item_bg">#ffffff</color>
+    <color name="view_divider_color">#BABABA</color>
+
+    <color name="logocolor">#10a500</color>
+    <color name="redheath">#008000  </color>
+    <color name="greenheath">#008000  </color>
+
+</resources>
